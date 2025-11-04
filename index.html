@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aneesh | Game Developer</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Top-right social links styling */
+    .social-links {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Canvas background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Social Icons (Top-right) -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/aneesh-thodupunoori-47b56b192/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <!-- Intro section -->
+  <section class="hero">
+    <h1>Hello, I'm Aneesh</h1>
+    <p>Game Developer &middot; Unreal Developer</p>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects">
+    <div class="project-card">
+      <div class="text">
+        <h2>1v1 Strike</h2>
+        <p>A fast-paced multiplayer shooter where players face off in intense 1v1 battles.</p>
+        <p><strong>Tools:</strong> Unity, Photon, C#</p>
+      </div>
+      <div class="media">
+        <img src="assets/1v1strike.gif" alt="1v1 Strike Gameplay">
+      </div>
+    </div>
+
+    <!-- Add more projects here if needed -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
